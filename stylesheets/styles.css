@@ -181,19 +181,22 @@ body
     margin: 1em 3em;
 }
 
+div.urgent-notice, div.no-notice
+{
+    margin:0em -1em 1em -1em;
+    padding:1em;
+}
+
 div.urgent-notice
 {
     background-color:#FFE0E0;
-    padding:1em;
-    margin: 1em;
 }
 
-#content div.urgent-notice h2
+div.no-notice
 {
-    text-decoration:underline;
-    color:red;
-    font-size:1.2em;
+    background-color:#E0FFE0;
 }
+
 
 #content table
 {
