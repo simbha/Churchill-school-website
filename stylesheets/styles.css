@@ -27,8 +27,7 @@ body
 #header
 {
     font-size:1em;
-    background-image: url(../images/header.png);
-    background-repeat:repeat-y;
+    background-color:#0000ec;
     height:104px;
     overflow:hidden;
 }
@@ -55,8 +54,7 @@ body
 {
     clear:both;
     font-size:1em;
-    background-image: url(../images/header.png);
-    background-repeat:repeat-y;
+    background-color:#0000ec;
     color:yellow;
     text-align:center;
     height:51px;
