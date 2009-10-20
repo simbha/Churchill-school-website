@@ -279,6 +279,31 @@ div.clear
     margin:0 2em;
 }
 
+#content div.staff
+{
+    float:left;
+    margin:0;
+    width:200px;
+    text-align:center;
+}
+
+#content div.staff span.pos
+{
+    font-weight:bold;
+}
+
+#content div.staff img
+{
+    margin:0em;
+    padding:0em;
+}
+
+#content div.staff p
+{
+    width:200px;
+    height:4em;
+}
+
 @media print { #content { font-size: 11pt; font-family: times new roman, serif; }
 
   #content td /*td doesn't always pick up cascaded font characteristics*/
