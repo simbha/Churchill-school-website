@@ -1,0 +1,55 @@
+#content div.staff
+{
+    float:left;
+    margin:0;
+    width:200px;
+    text-align:center;
+}
+
+#content div.staff span.pos
+{
+    font-weight:bold;
+}
+
+#content div.staff img
+{
+    margin:0em;
+    padding:0em;
+}
+
+#content div.staff p
+{
+    width:200px;
+    height:4em;
+}
+
+#content table, #content table tr, #content table td, #content table th
+{
+    border:none;
+    padding:0.25em;
+}
+
+#content table th
+{
+    background-color:white;
+    width:auto;
+    text-align:left;
+    font-weight:normal;
+    font-style:italic;
+}
+
+#content table td
+{
+    font-weight:bold;
+}
+
+#content table th:before
+{
+    content: "̒";
+}
+
+#content table th:after
+{
+    content: "̓:";
+}
+
