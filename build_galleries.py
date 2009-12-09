@@ -34,6 +34,7 @@ withjavascript_html_template="""\
   <div id="page">
 <!--header-->
   <div class="gallery" id="content">
+    <h1>%(title)s</h1>
     <noscript>
       <p>This photo browser requires javascript. A <a href="%(nojavascript_html_file)s">no javascript</a> version is
       available.</p>
@@ -74,6 +75,7 @@ nojavascript_html_template = """\
     <div id="page">
       <!--header-->
       <div class="gallery" id="content">
+      <h1>%(title)s</h1>
 %(images)s
       </div>
       <!--navigation-->
