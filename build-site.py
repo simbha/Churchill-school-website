@@ -46,7 +46,13 @@ def build_node_pages(element):
             build_node_pages(sublist)
             for se in sublist:
                 se_anchor = se.find("{http://www.w3.org/1999/xhtml}a")
-                str += '<li><a href="%s">%s</a></li>\n' % (se_anchor.get("href"), se_anchor.text)
+                #find the first text string associated with the se_anchor tree
+                text = ""
+                for t in se_anchor.getiterator():
+                    if t.text:
+                        text = t.text
+                        break
+                str += '<li><a href="%s">%s</a></li>\n' % (se_anchor.get("href"), text)
             print "Creating", source_dir + anchor.get("href")
             output = template.replace("<!--Add title here-->", anchor.text)
             output = output.replace("<!--Add content here-->",
