@@ -279,6 +279,16 @@ div.clear
     margin:0 2em;
 }
 
+#content table.download, #content table.download tr, #content table.download td
+{
+    border:none;
+}
+
+#content table.download img
+{
+    border:none;
+    margin:0;
+}
 
 @media print { #content { font-size: 11pt; font-family: times new roman, serif; }
 
