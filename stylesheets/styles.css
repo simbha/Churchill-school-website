@@ -19,7 +19,7 @@ body
 {
     position:relative;
     margin:auto;
-    max-width:65em;
+    max-width:67em;
     min-width:40em;
     font-size:0.8em;
 }
@@ -41,18 +41,17 @@ body
 #header h1
 {
     position:relative;
-    top:10px;
-    left:5px;
-    padding:0.25em;
+    white-space:nowrap;
+    overflow:hidden;
+    margin:10px 0px 0px 65px;
     color:yellow;
     z-index:102;
 }
 
 #header img
 {
-    position:relative;
+    position:absolute;
     left:7px;
-    float:left;
     z-index:101;
 }
 
@@ -103,7 +102,7 @@ body
 #content
 {
     font-size:1em;
-    padding:2em 2em 2em 14em;
+    padding:2em 4em 2em 14em;
     min-height:20em;
 }
 
