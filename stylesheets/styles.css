@@ -57,6 +57,7 @@ body
     background-color:#0000ec;
     height:51px;
     overflow:hidden;
+    border: 3px solid #0000ec;
 }
 
 #footer #awards
@@ -67,7 +68,7 @@ body
 #footer #w3c
 {
     float:left;
-    margin: 15px 0px 0px 3px;
+    margin: 21px 0px 0px 0px;
 }
 
 #footer #w3c img
