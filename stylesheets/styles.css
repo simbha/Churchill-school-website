@@ -57,6 +57,7 @@ body
 
 #footer
 {
+    position:relative;
     clear:both;
     font-size:1em;
     background-color:#0000ec;
@@ -72,13 +73,17 @@ body
 
 #footer #awards
 {
-    float:right;
+    position:absolute;
+    right:0px;
+    z-index:1;
 }
 
-#footer #w3c
+#footer a#w3c
 {
-    float:left;
-    margin: 21px 0px 0px 0px;
+    position:absolute;
+    border:none;
+    z-index:1;
+    bottom:-3px;
 }
 
 #footer #w3c img
@@ -88,9 +93,21 @@ body
 
 #footer p
 {
-    margin-top: 15px;
+    position:relative;
+    top: -1em;
+    margin: 30px 228px 0px 88px;
     text-align:center;
     color:yellow;
+}
+
+#footer #space
+{
+    margin:0em .5em;
+}
+
+* html #footer p
+{
+    margin-top:27px;
 }
 
 #footer a
