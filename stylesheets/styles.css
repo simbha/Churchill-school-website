@@ -100,9 +100,10 @@ body
     color:yellow;
 }
 
-#footer #space
+#footer span.footer-text
 {
-    margin:0em .5em;
+    margin:0em 0.5em;
+    white-space:nowrap;
 }
 
 * html #footer p
