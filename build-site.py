@@ -76,7 +76,8 @@ if __name__ == "__main__":
         process_nodes(iddict["navigation"].find("{http://www.w3.org/1999/xhtml}ul"), os.path.basename(f))
         s = file(f).read()
         for r in ("header", "footer", "navigation"):
-            s = s.replace("<!--%s-->" % r, cElementTree.tostring(iddict[r], "utf-8"))
+            s = s.replace("<!--%s-->" % r, 
+                          cElementTree.tostring(iddict[r], "utf-8").replace(' xmlns:html="http://www.w3.org/1999/xhtml"', ''))
         s = s.replace("html:", "")
         outfile = site_dir + os.path.basename(f)
         print "Creating", outfile
