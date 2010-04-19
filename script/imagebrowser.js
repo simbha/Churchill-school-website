@@ -1,11 +1,20 @@
-function set_photo()
+
+function blank_loaded()
 {
+    document.getElementById("photo").onload = null
     document.getElementById("photo").src = photos[current_photo]
     document.getElementById("photo").className = aspects[current_photo]
     document.getElementById("buttonbar").className = aspects[current_photo]
     var count = "<p class=\"count\">" + (current_photo + 1) + " of " + photos.length + "</p>"
     document.getElementById("photo").alt = (current_photo + 1) + " of " + photos.length
     document.getElementById("caption").innerHTML = count + captions[current_photo]
+
+}
+
+function set_photo()
+{
+    document.getElementById("photo").onload = blank_loaded
+    document.getElementById("photo").src = "images/1px.png"
 }
 
 function first_photo()
