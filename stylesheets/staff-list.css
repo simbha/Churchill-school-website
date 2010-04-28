@@ -45,11 +45,11 @@
 
 #content table th:before
 {
-    content: "̒";
+    content: "\"";
 }
 
 #content table th:after
 {
-    content: "̓:";
+    content: "\":";
 }
 
