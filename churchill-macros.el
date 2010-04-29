@@ -17,3 +17,7 @@
 (fset 'churchill-macro-nbsp
    "\C-d&nbsp;")
 (global-set-key [?\C-x ?\C-k ?n] 'churchill-macro-nbsp)
+
+(fset 'churchill-macro-dlentry
+   [?\M-\\ tab ?< ?d ?t ?> ?\M-f ?\M-f ?< ?/ ?\M-\\ ?< ?d ?d ?> ?\C-e ?\M-\\ ?< ?/ ?\C-f])
+(global-set-key [?\C-x ?\C-k ?d] 'churchill-macro-dlentry)
