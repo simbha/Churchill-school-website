@@ -1,0 +1,11 @@
+      <p><!--reason for pdf here--> we supply these documents in PDF format. PDF reader software is available from <a
+      href="http://get.adobe.com/reader/">Adobe's website</a>.</p>
+      <table class="download">
+        <colgroup>
+          <col class="icon"/><col/>
+        </colgroup>
+        <tr>
+          <td><a href="downloads/.pdf"><img src="images/pdf-symbol.png" alt="pdf"/></a></td>
+          <td><a href="downloads/.pdf"><!--filename--> (<!--file size-->&nbsp;MB)</a><br/>(Updated:&nbsp;<!--update date-->)</td>
+        </tr>
+       </table>
