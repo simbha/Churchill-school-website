@@ -29,6 +29,9 @@ body
 {
     font-size:1em;
     background-color:#0000ec;
+    background-image:url(../images/logo.gif);
+    background-repeat:no-repeat;
+    background-position:5px;
     height:104px;
     overflow:hidden;
     border: 3px solid #0000ec;
