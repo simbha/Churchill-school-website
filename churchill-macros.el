@@ -21,3 +21,7 @@
 (fset 'churchill-macro-dlentry
    [?\M-\\ tab ?< ?d ?t ?> ?\M-f ?\M-f ?< ?/ ?\M-\\ ?< ?d ?d ?> ?\C-e ?\M-\\ ?< ?/ ?\C-f])
 (global-set-key [?\C-x ?\C-k ?d] 'churchill-macro-dlentry)
+
+(fset 'churchill-macro-yeargroupspan
+   "<span class=\"yeargroup\">\346\346</")
+(global-set-key [?\C-x ?\C-k ?y] 'churchill-macro-yeargroupspan)
