@@ -274,6 +274,12 @@ div.clear
     text-decoration: line-through;
 }
 
+#content span.yeargroup
+{
+    font-weight: bold;
+    color: #008000;
+}
+
 #ChangeDetection {border:blue 1px solid; padding:1em;margin:1em;}
 #ChangeDetection div {text-align:center;}
 
