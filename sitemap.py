@@ -6,6 +6,7 @@ pages_directory = "pages/"
 
 nonstd = (
     ("index", "daily", "1.0"),
+    ("diary", "daily", "1.0"),
     ("newsletter", "never", "0.75"),
     ("topic-web", "monthly", "0.5"))
 
