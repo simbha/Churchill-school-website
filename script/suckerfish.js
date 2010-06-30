@@ -10,5 +10,5 @@ sfHover = function() {
 	}
 }
 
-if (window.attachEvent) window.attachEvent("onload", sfHover);
+window.attachEvent("onload", sfHover);
 
