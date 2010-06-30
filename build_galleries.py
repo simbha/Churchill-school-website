@@ -26,7 +26,7 @@ withjavascript_html_template="""\
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/> 
     <link rel="stylesheet" href="stylesheets/styles.css" type="text/css" />
     <link rel="stylesheet" href="stylesheets/galleries.css" type="text/css" />
-    <script type="text/javascript" src="script/suckerfish.js"></script>
+    <!--[if IE 6]><script type="text/javascript" src="script/suckerfish.js"></script><![endif]-->
     <script type="text/javascript" src="%(javascript_file)s"></script>
     <script type="text/javascript" src="script/imagebrowser.js"></script>
   </head>
