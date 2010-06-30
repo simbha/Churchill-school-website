@@ -1,11 +1,11 @@
-@import url(suckerfish.css);
-
-*
+*/*margin and padding reset for browser consistency*/
 {
     margin:0;
     padding:0;
 }
 
+/********************/
+/*Top level*/
 body
 {
     padding:1em;
@@ -25,6 +25,112 @@ body
     font-size:0.8em;
 }
 
+#content
+{
+    font-size:1em;
+    padding:2em 4em 2em 14em;
+    min-height:20em;
+}
+
+* html #content.short/*fix for ie6*/
+{
+    height:22em;
+}
+/*End of Top Level*/
+/********************/
+
+/********************/
+/*Suckerfish navigation*/
+#navigation
+{
+    position:absolute;
+    top:110px;/*matches header height*/
+    left:0;
+    margin-top:2em;/*matches header bottom margin*/
+    width:11em;
+    font-size:1em;
+    z-index:1000;
+}
+
+#navigation hr/*hide horizontal rule used for no-css display*/
+{
+    display:none;
+}
+
+#navigation ul
+{
+    list-style: none;
+    margin:0;
+}
+
+#navigation li
+{
+    position:relative;
+    float:left; /*fix for IE6 bug*/
+    z-index:1;
+    margin-bottom:-1px;
+}
+
+#navigation a.node
+{
+    background:white url(../images/node.gif) center right no-repeat;
+}
+
+#navigation li ul { 
+    position : absolute;
+    top: 0px;
+    left: 10em;
+    display:none;
+}
+
+#navigation a {
+    width: 10em;
+    display : block;
+    color : black;
+    font-weight : bold;
+    text-decoration : none;
+    background-color : white;
+    border : 1px solid black;
+    padding : 0.25em 0.5em;
+}
+
+* html #navigation a /*workaround for IE6 Box model bug*/
+{
+    width:11em;
+}
+
+#navigation li:hover, #navigation li.sfhover
+{
+    min-height:0;/*fix for IE7 hover bug*/
+    z-index:2;
+}
+
+#navigation li a:hover {
+    color : white;
+    background-color : black;
+}
+
+#navigation li:hover ul, #navigation li:hover li:hover ul, 
+#navigation li.sfhover ul, #navigation li.sfhover li.sfhover ul
+{
+    display:block;
+}
+
+#navigation li:hover ul ul, #navigation li.sfhover ul ul
+{
+    display:none;
+}
+
+#navigation li a.current
+{
+    background-color:#E0F0FF;
+    color:black;
+}
+/*End of suckerfish navigation*/
+/********************/
+
+/********************/
+/*Header*/
 #header
 {
     font-size:1em;
@@ -46,19 +152,15 @@ body
 {
     position:relative;
     white-space:nowrap;
-    overflow:hidden;
     margin:20px 0px 0px 85px;
     color:yellow;
-    z-index:102;
+    font-size:2em;
 }
+/*End header*/
+/********************/
 
-#header img
-{
-    position:absolute;
-    left:7px;
-    z-index:101;
-}
-
+/********************/
+/*Footer*/
 #footer
 {
     position:relative;
@@ -80,6 +182,7 @@ body
     position:absolute;
     right:0px;
     z-index:1;
+    margin:0;
 }
 
 #footer a#w3c
@@ -93,6 +196,7 @@ body
 #footer #w3c img
 {
     border:none;
+    margin:0;
 }
 
 #footer p
@@ -119,44 +223,56 @@ body
 {
     color:yellow;
 }
+/*End footer*/
+/********************/
 
-	
-#content
+p
 {
-    font-size:1em;
-    padding:2em 4em 2em 14em;
-    min-height:20em;
+    margin:1em;
 }
 
-* html #content.short
+blockquote
 {
-    height:22em;
+    margin:0.25em 3em;
 }
 
-#content h1
+
+address
+{
+    font-style:normal;
+    margin: 1em 3em;
+}
+
+/********************/
+/*Headings*/	
+h1
 {
     font-size:1.5em;
     margin-bottom:1em;
 }
 
-#content h2
+h2
 {
     font-size:1.3em;
     margin-bottom:0.75em;
 }
 
-#content h3
+h3
 {
     font-size:1.1em;
     margin-bottom:0.5em;
 }
+/*End headings*/
+/********************/
 
-#content dt
+/********************/
+/*Lists*/
+dt
 {
     font-weight:bold;
 }
 
-#content dd
+dd
 {
     margin:0.25em 0em 0.5em 6em;
 }
@@ -167,52 +283,123 @@ dl.diary dd
     display:list-item;
 }
 
-#content p,#content dl
+dl
 {
     margin: 1em;
 }
 
-#content img
-{
-    margin: 20px;
-}
-
-#content img.float-right
-{
-    float:right;
-}
-
-#content img.float-left
-{
-    float:left;
-}
-
-#content blockquote
-{
-    margin:0.25em 3em;
-}
-
-#content ul, #content ol
+ul, ol
 {
     margin:1em;
     margin-left:3em;
 }
 
-#content li ul, #content li ol
+li ul, li ol
 {
     margin:0 0 0 1.5em;
 }
+/*End lists*/
+/********************/
 
-
-#content p.newsletter-inav
+/********************/
+/*Images*/
+img
 {
-    text-align:right;
+    margin: 20px;
 }
 
-#content address
+img.float-right
 {
-    font-style:normal;
-    margin: 1em 3em;
+    float:right;
+}
+
+img.float-left
+{
+    float:left;
+}
+/*End images*/
+/********************/
+
+/********************/
+/*Tables*/
+table
+{
+    border: solid black 2px;
+    border-collapse:collapse;
+    margin: 1em 2em 2em 2em;
+}
+
+table td, table th
+{
+    border: solid black 1px;
+    padding: 0.5em 1em;
+}
+
+th
+{
+    background-color:#E0E0FF;
+    border-right:solid black 2px;
+    width:7em;
+}
+
+* html th
+{
+    width:8.5em;
+}
+
+thead th
+{
+    width:auto;
+}
+
+* html td, * html th
+{
+    font-size:0.8em;
+}
+
+table.download, table.download tr, table.download td
+{
+    border:none;
+}
+
+table.download img
+{
+    border:none;
+    margin:0;
+}
+/*End tables*/
+/********************/
+
+/********************/
+/*Misc spans and divs*/
+div.clear
+{
+    clear:both;
+}
+
+span.correction
+{
+    text-decoration: line-through;
+}
+
+span.yeargroup
+{
+    font-weight: bold;
+    color: #008000;
+}
+
+div.policy-dates
+{
+    border: 1px gray solid;
+    width:17em;
+    color:gray;
+    margin:0 0 0 auto;
+}
+
+div.policy-dates ul
+{
+    list-style:none;
+    margin:0 2em;
 }
 
 div.urgent-notice, div.no-notice
@@ -230,114 +417,22 @@ div.no-notice
 {
     background-color:#E0FFE0;
 }
+/*End misc spans and divs*/
+/********************/
 
+/*Print stylesheet*/
+@media print { 
 
-#content table
-{
-    border: solid black 2px;
-    border-collapse:collapse;
-    margin: 1em 2em 2em 2em;
-}
-
-
-#content table td, #content table th
-{
-    border: solid black 1px;
-    padding: 0.5em 1em;
-}
-
-#content th
-{
-    background-color:#E0E0FF;
-    border-right:solid black 2px;
-}
-
-#content th
-{
-    width:7em;
-}
-
-#content thead th
-{
-    width:auto;
-}
-
-* html #content td, * html #content th
-{
-    font-size:0.8em;
-}
-
-div.clear
-{
-    clear:both;
-}
-
-#content span.correction
-{
-    text-decoration: line-through;
-}
-
-#content span.yeargroup
-{
-    font-weight: bold;
-    color: #008000;
-}
-
-#ChangeDetection {border:blue 1px solid; padding:1em;margin:1em;}
-#ChangeDetection div {text-align:center;}
-
-#school-map #content
-{
-    margin:0em;
-    padding:0em;
-    text-align:center;
-    clear:both;
-}
-
-#school-map #content img
-{
-    position:relative;
-    margin: 2em 0em;
-    z-index:101;
-}
-
-#school-map #navigation
-{
-    z-index:102;
-}
-
-#content div.policy-dates
-{
-    border: 1px gray solid;
-    width:17em;
-    color:gray;
-    margin:0 0 0 auto;
-}
-
-#content div.policy-dates ul
-{
-    list-style:none;
-    margin:0 2em;
-}
-
-#content table.download, #content table.download tr, #content table.download td
-{
-    border:none;
-}
-
-#content table.download img
-{
-    border:none;
-    margin:0;
-}
-
-@media print { #content { font-size: 11pt; font-family: times new roman, serif; }
+  #content 
+  { 
+      font-size: 11pt; font-family: times new roman, serif; 
+  }
 
   #content td /*td doesn't always pick up cascaded font characteristics*/
   {
     font-family: times new roman, serif;
     font-size:11pt;
-    }
+  }
 
   #content
   {

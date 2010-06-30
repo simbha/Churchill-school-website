@@ -1,0 +1,19 @@
+#school-map #content
+{
+    margin:0em;
+    padding:0em;
+    text-align:center;
+    clear:both;
+}
+
+#school-map img
+{
+    position:relative;
+    margin: 2em 0em;
+    z-index:101;
+}
+
+#school-map
+{
+    z-index:102;
+}
