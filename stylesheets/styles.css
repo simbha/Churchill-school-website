@@ -382,6 +382,11 @@ span.correction
     text-decoration: line-through;
 }
 
+.hide /*for stuff that should only appear in non css output*/
+{
+    display:none;
+}
+
 span.yeargroup
 {
     font-weight: bold;
