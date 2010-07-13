@@ -4,6 +4,14 @@
     padding:0;
 }
 
+/*slight rounding of corners on decent browsers*/
+#header, #footer, div.urgent-notice, div.no-notice
+{
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
+
 /********************/
 /*Top level*/
 body
