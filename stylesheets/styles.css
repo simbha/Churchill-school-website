@@ -193,20 +193,6 @@ body
     margin:0;
 }
 
-#footer a#w3c
-{
-    position:absolute;
-    border:none;
-    z-index:1;
-    bottom:-3px;
-}
-
-#footer #w3c img
-{
-    border:none;
-    margin:0;
-}
-
 #footer p
 {
     position:relative;
