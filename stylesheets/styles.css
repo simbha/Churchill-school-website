@@ -60,6 +60,14 @@ body
     z-index:1000;
 }
 
+.node-symbol
+{
+    position:absolute;
+    right:0.2em;
+    font-weight:bolder;
+    color:gray;
+}
+
 #navigation hr/*hide horizontal rule used for no-css display*/
 {
     display:none;
@@ -77,11 +85,6 @@ body
     float:left; /*fix for IE6 bug*/
     z-index:1;
     margin-bottom:-1px;
-}
-
-#navigation a.node
-{
-    background:white url(../images/node.gif) center right no-repeat;
 }
 
 #navigation li ul { 
