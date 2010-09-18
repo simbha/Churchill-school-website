@@ -12,3 +12,4 @@ site/*
 .backup.exclude
 .thumbnails/*
 downloads/prospectus.pdf
+logs
