@@ -77,6 +77,12 @@ div.caption
     margin-bottom:3em;
 }
 
+div.caption h2
+{
+    font-size:1.1em;
+    margin-left:1em;
+}
+
 p.count
 {
     font-weight:bold;
