@@ -87,7 +87,7 @@ body
     margin-bottom:-1px;
 }
 
-#navigation li ul { 
+#navigation li ul {
     position : absolute;
     top: 0px;
     left: 10em;
@@ -121,7 +121,7 @@ body
     background-color : black;
 }
 
-#navigation li:hover ul, #navigation li:hover li:hover ul, 
+#navigation li:hover ul, #navigation li:hover li:hover ul,
 #navigation li.sfhover ul, #navigation li.sfhover li.sfhover ul
 {
     display:block;
@@ -241,7 +241,7 @@ address
 }
 
 /********************/
-/*Headings*/	
+/*Headings*/
 h1
 {
     font-size:1.5em;
@@ -419,15 +419,20 @@ div.no-notice
 {
     background-color:#E0FFE0;
 }
+
+.draft
+{
+    background-image: url(../images/draft.png);
+}
 /*End misc spans and divs*/
 /********************/
 
 /*Print stylesheet*/
-@media print { 
+@media print {
 
-  #content 
-  { 
-      font-size: 11pt; font-family: times new roman, serif; 
+  #content
+  {
+      font-size: 11pt; font-family: times new roman, serif;
   }
 
   #content td /*td doesn't always pick up cascaded font characteristics*/
@@ -440,9 +445,9 @@ div.no-notice
   {
       padding-left:0em;
   }
- 
+
   #navigation, #header, #footer
-  { 
+  {
     display: none;
   }
 }
