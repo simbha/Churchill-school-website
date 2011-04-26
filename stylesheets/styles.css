@@ -425,9 +425,9 @@ div.no-notice
     background-image: url(../images/draft.png);
 }
 
-.pre
+pre
 {
-    white-space:pre;
+    font-family: verdana, arial, helvetica, serif;
 }
 /*End misc spans and divs*/
 /********************/
@@ -454,5 +454,10 @@ div.no-notice
   #navigation, #header, #footer
   {
     display: none;
+  }
+
+  pre
+  {
+    font-family: times new roman, serif;
   }
 }
