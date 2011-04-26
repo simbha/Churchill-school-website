@@ -424,6 +424,11 @@ div.no-notice
 {
     background-image: url(../images/draft.png);
 }
+
+.pre
+{
+    white-space:pre;
+}
 /*End misc spans and divs*/
 /********************/
 
