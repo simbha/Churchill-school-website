@@ -369,7 +369,7 @@ table.download img
 
 /********************/
 /*Misc spans and divs*/
-div.clear
+.clear
 {
     clear:both;
 }
@@ -429,6 +429,29 @@ pre
 {
     font-family: verdana, arial, helvetica, serif;
 }
+
+div.governor
+{
+    position:relative;
+}
+
+div.governor img
+{
+    position:absolute;
+    margin-top: 5px;
+}
+
+div.governor-desc
+{
+    margin-left:230px;
+    min-height: 300px;
+}
+
+#governors h2
+{
+    margin-top: 2em;
+}
+
 /*End misc spans and divs*/
 /********************/
 
