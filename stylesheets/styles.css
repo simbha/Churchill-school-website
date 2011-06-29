@@ -447,6 +447,11 @@ div.governor-desc
     min-height: 300px;
 }
 
+* html div.governor-desc
+{
+    height:300px;
+}
+
 #governors h2
 {
     margin-top: 2em;
