@@ -457,6 +457,16 @@ div.governor-desc
     margin-top: 2em;
 }
 
+div.jumphighlight
+{
+    padding: 1em;
+    margin: 1em 1em 1em -1em;
+    border: solid 3px yellow;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
 /*End misc spans and divs*/
 /********************/
 
