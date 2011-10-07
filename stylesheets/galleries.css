@@ -10,7 +10,7 @@
     border:solid gray 2px;
     z-index:101;
     width:600px;
-    height:400px;
+    /* height:400px; */
 }
 
 #content.gallery #buttonbar
@@ -28,7 +28,7 @@
 #content.gallery img.portrait
 {
     left:75px;
-    height:600px;
+    /* height:600px; */
     width:400px;
 }
 
@@ -87,4 +87,4 @@ p.count
 {
     font-weight:bold;
 }
-    
+
