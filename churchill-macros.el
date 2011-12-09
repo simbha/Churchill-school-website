@@ -22,6 +22,18 @@
    [?\M-\\ tab ?< ?d ?t ?> ?\M-f ?\M-f ?< ?/ ?\M-\\ ?< ?d ?d ?> ?\C-e ?\M-\\ ?< ?/ ?\C-f])
 (global-set-key [?\C-x ?\C-k ?d] 'churchill-macro-dlentry)
 
-(fset 'churchill-macro-yeargroupspan
-   "<span class=\"yeargroup\">\346\346</")
+(defun churchill-macro-yeargroupspan()
+  (interactive)
+  (save-excursion
+    (insert "</span>")
+    (goto-char (mark))
+    (insert "<span class=\"yeargroup\">")))
 (global-set-key [?\C-x ?\C-k ?y] 'churchill-macro-yeargroupspan)
+
+(defun churchill-macro-strong()
+  (interactive)
+  (save-excursion
+    (insert "</strong>")
+    (goto-char (mark))
+    (insert "<strong>")))
+(global-set-key [?\C-x ?\C-k ?s] 'churchill-macro-strong)
