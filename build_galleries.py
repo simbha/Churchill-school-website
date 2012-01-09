@@ -23,7 +23,7 @@ withjavascript_html_template="""\
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <title>Churchill Primary School - %(title)s</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8"/> 
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
     <link rel="stylesheet" href="stylesheets/styles.css" type="text/css" />
     <link rel="stylesheet" href="stylesheets/galleries.css" type="text/css" />
     <!--[if IE 6]><script type="text/javascript" src="script/suckerfish.js"></script><![endif]-->
@@ -64,7 +64,7 @@ nojavascript_html_template = """\
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <title>Churchill Primary School - %(title)s</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8"/> 
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
     <link rel="stylesheet" href="stylesheets/styles.css" type="text/css" />
     <link rel="stylesheet" href="stylesheets/galleries.css" type="text/css" />
     <script type="text/javascript">
@@ -100,8 +100,8 @@ def build_javascript(gallery):
         "photos": "\",\n\"".join([photos_directory + x[0] for x in gallery[2]]),
         "captions": "\",\n\"".join([x[1].replace("\n", "\\\n ").replace("\"", "\\\"") for x in gallery[2]]),
         "aspects": "\",\n\"".join([x[2] for x in gallery[2]]) }
-             
-           
+
+
 def build_withjavascript_html(gallery, javascript_file, nojavascript_html_file):
     return withjavascript_html_template % {
         "title": gallery[0],
@@ -125,7 +125,7 @@ def build_nojavascript_html(gallery, withjavascript_html_file):
         "title": gallery[0],
         "with_javascript_html": withjavascript_html_file,
         "images": images}
-            
+
 
 def process_source(filename):
     retval = []
@@ -158,9 +158,9 @@ def main():
         open(script_directory + javascript_file, "w").write(
             build_javascript(gallery))
         open(pages_directory + nojavascript_html_file, "w").write(
-            build_nojavascript_html(gallery, withjavascript_html_file))
+            build_nojavascript_html(gallery, withjavascript_html_file).encode("utf-8"))
         open(pages_directory + withjavascript_html_file, "w").write(
-            build_withjavascript_html(gallery, javascript_file, nojavascript_html_file))
+            build_withjavascript_html(gallery, javascript_file, nojavascript_html_file).encode("utf-8"))
 
 
 if __name__ == "__main__":
