@@ -37,3 +37,21 @@
     (goto-char (mark))
     (insert "<strong>")))
 (global-set-key [?\C-x ?\C-k ?s] 'churchill-macro-strong)
+
+(defun churchill-certificate-table()
+  (interactive)
+  (save-excursion
+    (exchange-point-and-mark)
+    (while (re-search-forward "^" (mark) t)
+      (replace-match "<tr><th class=\"yeargroup\">" nil nil)))
+  (save-excursion
+    (exchange-point-and-mark)
+    (while (re-search-forward ":\\W*" (mark) t)
+      (replace-match "</th><td>" nil nil)))
+  (save-excursion
+    (exchange-point-and-mark)
+    (while (re-search-forward "\\W*$" (mark) t)
+      (replace-match "</td></tr>" nil nil)
+      (forward-char)))
+)
+
