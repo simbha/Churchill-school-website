@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Niconne);
+
 */*margin and padding reset for browser consistency*/
 {
     margin:0;
@@ -22,6 +24,7 @@ body
     color: black;
     background-color:white;
     line-height:1.3;
+    font-size:0.9em;
 }
 
 #page
@@ -30,7 +33,7 @@ body
     margin:auto;
     max-width:67em;
     min-width:45em;
-    font-size:0.8em;
+    font-size:1em;
 }
 
 #content
@@ -64,7 +67,7 @@ body
 {
     position:absolute;
     right:0.2em;
-    font-weight:bolder;
+    /* font-weight:bolder; */
     color:gray;
 }
 
@@ -98,7 +101,7 @@ body
     width: 10em;
     display : block;
     color : black;
-    font-weight : bold;
+    /* font-weight : bold; */
     text-decoration : none;
     background-color : white;
     border : 1px solid black;
@@ -161,11 +164,13 @@ body
 
 #header h1
 {
+    font-family: "Niconne";
+    font-weight: normal;
     position:relative;
     white-space:nowrap;
     margin:20px 0px 0px 85px;
     color:yellow;
-    font-size:2em;
+    font-size:3em;
 }
 /*End header*/
 /********************/
@@ -351,7 +356,7 @@ thead th
 
 * html td, * html th
 {
-    font-size:0.8em;
+    font-size:0.9em;
 }
 
 table.download, table.download tr, table.download td
